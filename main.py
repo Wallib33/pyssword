@@ -10,14 +10,13 @@ from generators import (
     pin_generator,
 )
 
-
+"""The main function wheres the programs start"""
 def main():
     while True:
         menu.menu_clear()
         menu.main_menu()
 
         try:
-            print("Option:")
             option = int(input(":"))
 
             if option == 1:
@@ -31,6 +30,8 @@ def main():
                 continue
             elif option == 4:
                 custom_generator()
+                print("\nIn development...")
+                time.sleep(2)
                 continue
             elif option == 5:
                 print("Leaving de Pyssword!")
@@ -46,7 +47,9 @@ def main():
             time.sleep(2)
             continue
         except KeyboardInterrupt:
-            print("Force exit")
+            print(" | Force exit")
+
+    print("\nEnd of script!")
 
 if __name__ == "__main__":
     main()

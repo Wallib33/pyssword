@@ -18,7 +18,7 @@ def main_menu():
                             ==============
 
             Generate a random password in a simple and fast way.
-            Choose the password length and your option:
+            Choose the password style that you want.
 
                 (1) -> Numbers only (PIN code)
 
@@ -31,7 +31,7 @@ def main_menu():
                 (5) -> Exit
             ======================================================
             """
-    # For a better visual in terminal
+    # use textwrap for a better visual in terminal
     print(textwrap.dedent(menu))
 
 def password_menu(gen_mode):
@@ -42,7 +42,7 @@ def password_menu(gen_mode):
                                 |  Pyssword  |
                                 ==============
 
-            Welcome to the passowrd generator!
+            Welcome to the passoword generator!
             You choose the {gen_mode} type of password.
 
             Please set the length of your password above(min: 4, max: 50):
